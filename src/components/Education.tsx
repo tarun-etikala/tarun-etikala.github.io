@@ -6,11 +6,10 @@ const EducationContainer = styled.section`
   padding: ${({ theme }) => theme.spacing.large};
   background-color: white;
   margin: ${({ theme }) => theme.spacing.medium} 0;
-  width: 100%;
 `;
 
 const Education: React.FC = () => (
-  <EducationContainer>
+  <EducationContainer id="education">
     <h2>Education</h2>
     {data.education.map((edu, index) => (
       <div key={index}>
