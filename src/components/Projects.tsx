@@ -9,7 +9,7 @@ const ProjectsContainer = styled.section`
 `;
 
 const Projects: React.FC = () => (
-  <ProjectsContainer>
+  <ProjectsContainer id="projects">
     <h2>Projects</h2>
     {data.projects.map((project, index) => (
       <div key={index}>

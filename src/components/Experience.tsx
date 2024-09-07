@@ -9,7 +9,7 @@ const ExperienceContainer = styled.section`
 `;
 
 const Experience: React.FC = () => (
-  <ExperienceContainer>
+  <ExperienceContainer id="experience">
     <h2>Work Experience</h2>
     {data.workExperience.map((work, index) => (
       <div key={index}>

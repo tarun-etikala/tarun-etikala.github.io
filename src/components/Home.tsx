@@ -4,6 +4,7 @@ import About from "./About";
 import Education from "./Education";
 import Experience from "./Experience";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 const HomeContainer = styled.div`
   padding: ${({ theme }) => theme.spacing.large};
@@ -12,11 +13,12 @@ const HomeContainer = styled.div`
 `;
 
 const Home: React.FC = () => (
-  <HomeContainer>
+  <HomeContainer id="home">
     <About />
-    <Education />
     <Experience />
     <Projects />
+    <Skills />
+    <Education />
   </HomeContainer>
 );
 
