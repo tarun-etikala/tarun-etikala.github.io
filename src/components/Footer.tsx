@@ -8,12 +8,17 @@ const FooterContainer = styled.footer`
   text-align: center;
   position: fixed;
   width: 100%;
+  height: 1.5rem;
   bottom: 0;
+`;
+const FooterText = styled.p`
+  margin: 0;
+  line-height: 1.5rem;
 `;
 
 const Footer: React.FC = () => (
   <FooterContainer>
-    <p>© 2024 My Portfolio</p>
+    <FooterText>© 2024 My Portfolio</FooterText>
   </FooterContainer>
 );
 

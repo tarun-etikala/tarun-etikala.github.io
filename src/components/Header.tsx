@@ -3,15 +3,15 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
-  background-color: #5f5f65e0;
+  background-color: #282828de;
   padding: ${({ theme }) => theme.spacing.medium};
   color: white;
   text-align: center;
   position: fixed;
   width: 100%;
   top: 0;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   z-index: 9999;
 `;
 
