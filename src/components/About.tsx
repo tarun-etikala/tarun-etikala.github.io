@@ -15,7 +15,7 @@ const resumeURL =
 
 const About: React.FC = () => (
   <AboutContainer id="about">
-    <h2>About Me</h2>
+    <h1>Tarun Etikala</h1>
     <Avatar alt="Remy Sharp" src={dp} sx={{ width: 256, height: 256 }} />
     <p>
       I am a Master of Science in Data Science student at Northeastern
