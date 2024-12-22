@@ -12,7 +12,7 @@ const Experience: React.FC = () => (
   <ExperienceContainer id="experience">
     <h2>Work Experience</h2>
     {data.workExperience.map((work, index) => (
-      <div key={index}>
+      <div key={index} className="experience-card">
         <h3>{work.company}</h3>
         <p>{work.position}</p>
         <p>{work.date}</p>
