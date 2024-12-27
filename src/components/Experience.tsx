@@ -43,7 +43,6 @@ const experiences = [
     ],
   },
 ];
-
 export const Experience = () => {
   return (
     <section id="experience" className="py-20 bg-secondary">
