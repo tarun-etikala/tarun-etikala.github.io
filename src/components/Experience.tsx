@@ -13,7 +13,8 @@ const experiences = [
     title: "Machine Learning Engineer ",
     company: "Transformly AI",
     period: "September 2024 - Present",
-    description: "Leading full-stack development and ML initiatives",
+    description:
+      "Conducted data analysis and developed machine learning models for financial debt management",
     details: [
       "Performed exploratory data analysis (EDA) on large financial datasets, identifying trends and insights that led to actionable business recommendations, improving the success rate of debt management program",
       "Developed and optimized machine learning models (classification, recommendation systems) to support debt management solution for a financial institution, enhancing customer outcomes",
@@ -23,7 +24,8 @@ const experiences = [
     title: "Software Development Engineer 2 ",
     company: "Philips",
     period: "June 2019 - December 2022",
-    description: "Developed and deployed machine learning models",
+    description:
+      "Engineered healthcare technology solutions, focusing on telehealth platforms and data visualization",
     details: [
       "Led the development of multi-user video conferencing for a remote patient monitoring platform using WebRTC and Twilio during COVID-19, enabling healthcare professionals to remotely monitor patients, improving care for over 10,000 patients",
       "Designed and optimized database models to improve the performance of telehealth platform, reducing query execution time by 40%, resulting in smoother application performance, enhancing scalability and clinician experience",
@@ -36,7 +38,8 @@ const experiences = [
     title: "SDE Intern",
     company: "Philips",
     period: "January 2019 - June 2019",
-    description: "Conducted data analysis and built predictive models",
+    description:
+      "Developed and optimized automated testing solutions for healthcare applications",
     details: [
       "Developed and automated end-to-end test suites (sanity, functional, and UI tests) for a remote patient monitoring Android application, reducing manual QA time by 80% using Appium, SpecFlow, and C#",
       "Implemented parallel test execution using Selenium Grid, decreasing testing time by 60% and accelerating the overall development cycle by optimizing test efficiency across multiple environments",
