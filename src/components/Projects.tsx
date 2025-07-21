@@ -17,20 +17,55 @@ import {
 
 const projects = [
   {
+    title: "Inbox AI (Email Assistant)",
+    description:
+      "Developed an AI-powered email assistant with RAG workflows, Dockerized Flask services, and GCP-based orchestration for automation.",
+    tags: [
+      "GCP",
+      "React.js",
+      "Flask",
+      "RAG",
+      "TFDV",
+      "Docker",
+      "OpenAI Embeddings",
+      "Vector Databases",
+      "GitHub Actions",
+      "Apache Airflow",
+      "Agentic AI Workflows",
+    ],
+    details: [
+      "Launched an email platform with Dockerized Flask APIs, React UI, TFDV, and Airflow on GCP for automated workflows.",
+      "Built agentic AI workflows using RAG, OpenAI embeddings, vector DB, and orchestrated pipelines via GitHub Actions.",
+    ],
+  },
+  {
     title: "Retail Management System",
     description:
-      "Developed a web application to optimize inventory management and streamline billing processes.",
-    tags: ["Angular", "Spring Boot", "MySQL"],
+      "Built a cloud-based inventory management system using Angular, Spring Boot, and MySQL with microservices and real-time APIs.",
+    tags: [
+      "Angular",
+      "Spring Boot",
+      "MySQL",
+      "RESTful APIs",
+      "Microservices Architecture",
+      "Multi-user Role Management",
+    ],
     details: [
-      "Built user flow enhancements catering to Store Managers, Employees, and Customers.",
-      "Streamlined inventory management and checkout processes for improved efficiency.",
+      "Developed enterprise web app using Angular, Spring Boot, and MySQL on cloud infrastructure for inventory management.",
+      "Built RESTful APIs and microservices architecture serving multiple user roles with real-time data processing capabilities.",
     ],
   },
   {
     title: "Portfolio Optimization Using ML",
     description:
       "Optimized investment portfolios using advanced financial models and machine learning algorithms.",
-    tags: ["Markowitz Model", "Black-Litterman Model", "SLSQP"],
+    tags: [
+      "Markowitz Model",
+      "Black-Litterman Model",
+      "SLSQP",
+      "Financial Modeling",
+      "Conjugate Gradient (CG)",
+    ],
     details: [
       "Implemented Markowitz's Modern Portfolio Theory and the Black-Litterman model for portfolio optimization.",
       "Developed tailored optimization algorithms, using SLSQP for low-risk and CG for medium-risk portfolios.",
@@ -39,11 +74,17 @@ const projects = [
   {
     title: "Chat with PDF using LLM",
     description:
-      "Developed a system for interacting with PDF documents using advanced LLMs.",
-    tags: ["LLama-2", "Gemini", "OpenAI GPT-3.5", "ROUGE-N"],
+      "Created a PDF chat interface using LLama-2, Gemini, and GPT-3.5, achieving high retrieval accuracy and improved document accessibility.",
+    tags: [
+      "LLama-2",
+      "Gemini",
+      "OpenAI GPT-3.5",
+      "ROUGE-N",
+      "PDF Data Extraction",
+    ],
     details: [
-      "Designed and implemented a tool leveraging LLama-2, Gemini, and OpenAI GPT-3.5.",
-      "Achieved a ROUGE-N score of 0.782 with a latency of 75 seconds, enhancing PDF information retrieval.",
+      "Developed a platform using LLama-2, Gemini, and OpenAI GPT-3.5 to transform PDF document interaction and accessibility.",
+      "Attained ROUGE-N score 0.782 and latency 75 seconds by benchmarking PDF data retrieval with large language models.",
     ],
   },
 ];

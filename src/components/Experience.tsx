@@ -10,14 +10,17 @@ import {
 
 const experiences = [
   {
-    title: "Machine Learning Engineer ",
+    title: "Machine Learning Engineer",
     company: "Transformly AI",
-    period: "September 2024 - Present",
+    period: "September 2024 - May 2025",
     description:
-      "Conducted data analysis and developed machine learning models for financial debt management",
+      "Designed and deployed ML models for risk segmentation and churn prediction, boosting client retention and profitability",
     details: [
-      "Performed exploratory data analysis (EDA) on large financial datasets, identifying trends and insights that led to actionable business recommendations, improving the success rate of debt management program",
-      "Developed and optimized machine learning models (classification, recommendation systems) to support debt management solution for a financial institution, enhancing customer outcomes",
+      "Analyzed financial and customer data with regression, classification, and clustering to reveal churn and profitability drivers",
+      "Collaborated with the CEO to design ML solutions for risk segmentation, improving client retention and repayment rates",
+      "Engineered XGBoost/RandomForest ensemble to rank debt clients by churn risk and profitability for optimized targeting",
+      "Optimized hyperparameters using grid and random search, consistently improving predictive accuracy in production",
+      "Evaluated models with cross-validation, achieving AUC of 0.89 and F1 of 0.78, outperforming previous business benchmarks.",
     ],
   },
   {
@@ -25,13 +28,17 @@ const experiences = [
     company: "Philips",
     period: "June 2019 - December 2022",
     description:
-      "Engineered healthcare technology solutions, focusing on telehealth platforms and data visualization",
+      "Developed full-stack healthcare solutions using Spring Boot, React, and Angular, enabling real-time remote care, EHR integration, and clinical insights for 20,000+ users.",
     details: [
-      "Led the development of multi-user video conferencing for a remote patient monitoring platform using WebRTC and Twilio during COVID-19, enabling healthcare professionals to remotely monitor patients, improving care for over 10,000 patients",
-      "Designed and optimized database models to improve the performance of telehealth platform, reducing query execution time by 40%, resulting in smoother application performance, enhancing scalability and clinician experience",
-      "Created an interactive data visualization dashboard using Highcharts to present patient health data, enabling healthcare providers to analyze patient health trends quickly, leading to faster diagnosis and improved outcomes for 20,000+ patients",
-      "Mentored junior developers by offering guidance on coding best practices and project insights, which improved their technical skills, reduced code defects by 30%, and enhanced overall team productivity and code quality",
-      "Won first prize in a global hackathon at Philips by integrating Alexa with remote patient monitoring solutions, enhancing accessibility for disabled users, demonstrating innovation, and delivering value through cutting-edge technology.",
+      "Architected and delivered 12 enterprise-level microservices using Spring Boot, deployed on Azure cloud infrastructure",
+      "Built high-performance backend services with PostgreSQL, Redis, and Kafka for real-time healthcare data processing",
+      "Redesigned and optimized healthcare data models, reducing query time and enabling seamless clinician data accessibility",
+      "Engineered CI/CD with Jenkins, Docker, and Kubernetes on AWS, cutting release time and ensuring reliable feature delivery",
+      "Built dynamic dashboards using React.js to visualize patient trends, providing 20,000+ users real-time clinical data insights",
+      "Led secure multi-user video call rollout (WebRTC, Twilio), enabling real-time remote care for over 10,000 hospital patients",
+      "Engineered HL7 FHIR-compliant pipelines to integrate EHR data into RPM systems, enhancing clinical interoperability",
+      "Collaborated with Philips Software Center of Excellence to enhance WebRTC video call service used across multiple teams",
+      "Mentored 3+ junior engineers, formalized code reviews, and improved JUnit/Selenium automation to cut production bugs",
     ],
   },
   {
@@ -39,10 +46,11 @@ const experiences = [
     company: "Philips",
     period: "January 2019 - June 2019",
     description:
-      "Developed and optimized automated testing solutions for healthcare applications",
+      "Built and automated testing frameworks for healthcare apps using .NET Core, Appium, and Selenium Grid, accelerating releases and improving system reliability.",
     details: [
-      "Developed and automated end-to-end test suites (sanity, functional, and UI tests) for a remote patient monitoring Android application, reducing manual QA time by 80% using Appium, SpecFlow, and C#",
-      "Implemented parallel test execution using Selenium Grid, decreasing testing time by 60% and accelerating the overall development cycle by optimizing test efficiency across multiple environments",
+      "Integrated RESTful APIs via .NET Core, improving real-time data synchronization for remote health monitoring applications",
+      "Automated end-to-end test suites for Android app with Appium, SpecFlow, and C#, accelerating release cycles and QA",
+      "Deployed Selenium Grid for parallel test execution, optimizing multi-environment testing and boosting product reliability",
     ],
   },
 ];

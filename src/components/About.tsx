@@ -8,11 +8,15 @@ export const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground">
-            I'm a passionate technologist with expertise in full-stack
-            development, machine learning, and data science. With years of
-            experience in building scalable applications and implementing ML
-            solutions, I bring a unique blend of software engineering and data
-            expertise to every project.
+            Full-Stack Machine Learning & Software Engineer with over 5 years of
+            experience delivering enterprise-grade applications and cloud-native
+            solutions. Skilled in building scalable web applications using Java,
+            React, and Angular, and in developing end-to-end ML/NLP systems
+            using Python, TensorFlow, PyTorch, XGBoost, Random Forest, and
+            Retrieval-Augmented Generation (RAG) with OpenAI. Built 12+
+            microservices using Spring Boot, Docker, and Kubernetes on cloud
+            infrastructure, with strong expertise in Agile development, CI/CD
+            automation, and production-grade deployment.
           </p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { GithubIcon, LinkedinIcon, Mail, Download, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import dp from "@/assets/dp.png";
+import dp from "@/assets/dpv2.png";
 import {
   Dialog,
   DialogContent,
@@ -14,7 +14,7 @@ export const Intro = () => {
   const linkedinURL = "https://www.linkedin.com/in/tarun-etikala";
   const handleDownloadResume = () => {
     const resumeUrl =
-      "https://drive.google.com/file/d/19vrZNau_8c1S-cEDn9BWbkmqqtfdzVyy/view?usp=sharing";
+      "https://drive.google.com/file/d/1_NdrjetEChjO5azGQ8RTgkNusudza5uY/view?usp=sharing";
     window.open(resumeUrl, "_blank");
   };
 
