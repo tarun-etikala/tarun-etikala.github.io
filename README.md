@@ -79,24 +79,13 @@ Dependabot is configured to automatically:
 - **React Router** - Routing
 - **Lucide React** - Icons
 
-## Expanding the ESLint configuration
+## ESLint Configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This project uses ESLint 9 with the flat config format. The configuration is located in `eslint.config.js` and includes:
 
-- Configure the top-level `parserOptions` property like this:
+- TypeScript ESLint rules
+- React Hooks linting
+- React Refresh rules
+- Recommended JavaScript rules
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To customize ESLint rules, edit `eslint.config.js`. For more information, see the [ESLint documentation](https://eslint.org/docs/latest/use/configure/configuration-files).
