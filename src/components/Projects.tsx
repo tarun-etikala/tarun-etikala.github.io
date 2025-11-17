@@ -14,6 +14,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const projects = [
   {
@@ -90,54 +91,86 @@ const projects = [
 ];
 // "CG Method"
 
-export const Projects = () => {
+const ProjectCard = ({ project, delay }: { project: typeof projects[0]; delay: number }) => {
+  const [cardRef, cardVisible] = useScrollAnimation(0.1, delay);
+  
   return (
-    <section id="projects" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <h2 className="section-title">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <Dialog key={index}>
-              <DialogTrigger className="w-full">
-                <Card className="card-hover h-full">
-                  <CardHeader>
-                    <CardTitle>{project.title}</CardTitle>
-                    <CardDescription>{project.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <Badge key={tag} variant="secondary">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>{project.title}</DialogTitle>
-                  <DialogDescription>
-                    <p className="mb-4">{project.description}</p>
-                    <div className="mb-4 flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <Badge key={tag} variant="secondary">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                    <h4 className="font-semibold mb-2">Key Features:</h4>
-                    <ul className="list-disc pl-4 space-y-2">
-                      {project.details.map((detail, i) => (
-                        <li key={i}>{detail}</li>
-                      ))}
-                    </ul>
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-          ))}
+    <div
+      ref={cardRef}
+      className={`stagger-animation ${cardVisible ? "visible" : ""}`}
+    >
+      <Dialog>
+        <DialogTrigger className="w-full h-full">
+          <Card className="card-modern h-full group cursor-pointer flex flex-col">
+            <CardHeader>
+              <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                {project.title}
+              </CardTitle>
+              <CardDescription className="text-muted-foreground leading-relaxed">
+                {project.description}
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex-1 flex flex-col justify-between">
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tags.slice(0, 4).map((tag) => (
+                  <Badge key={tag} variant="secondary" className="text-xs">
+                    {tag}
+                  </Badge>
+                ))}
+                {project.tags.length > 4 && (
+                  <Badge variant="outline" className="text-xs">
+                    +{project.tags.length - 4} more
+                  </Badge>
+                )}
+              </div>
+              <div className="text-sm text-primary font-medium group-hover:translate-x-2 transition-transform inline-block">
+                View Details →
+              </div>
+            </CardContent>
+          </Card>
+        </DialogTrigger>
+        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl">{project.title}</DialogTitle>
+            <DialogDescription>
+              <p className="mb-4 mt-2 text-foreground">{project.description}</p>
+              <div className="mb-6 flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <Badge key={tag} variant="secondary">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+              <h4 className="font-semibold mb-3 text-foreground">Key Features:</h4>
+              <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
+                {project.details.map((detail, i) => (
+                  <li key={i} className="text-foreground">{detail}</li>
+                ))}
+              </ul>
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
+};
+
+export const Projects = () => {
+  const [ref, isVisible] = useScrollAnimation(0.1);
+
+  return (
+    <section id="projects" className="py-24 md:py-32 bg-background relative">
+      <div className="container mx-auto px-4 max-w-7xl">
+        <div
+          ref={ref}
+          className={`fade-in-on-scroll ${isVisible ? "visible" : ""}`}
+        >
+          <h2 className="section-title text-center">Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} project={project} delay={index * 100} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
