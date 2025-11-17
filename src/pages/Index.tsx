@@ -7,7 +7,7 @@ import { Education } from "@/components/Education";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Intro />
       <About />
       <Experience />
